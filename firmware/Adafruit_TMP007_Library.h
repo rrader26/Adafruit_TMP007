@@ -17,6 +17,13 @@
   #include "Particle.h"
   #include "application.h"
   
+  #include "debug.h"
+  #include "math.h"
+  #include "limits.h"
+  #include "stdint.h"
+//#include "spark_utilities.h"
+
+  #include <sys/types.h>
 //#elif (ARDUINO >= 100)
 //  #include "Arduino.h"
 //#else
@@ -25,7 +32,7 @@
 //  #include "application.h"
 
 
-#include "Wire.h"
+//#include "Wire.h"
 
 // uncomment for debugging!
 //#define TMP007_DEBUG 1
