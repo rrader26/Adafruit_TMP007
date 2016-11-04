@@ -120,9 +120,9 @@ uint16_t Adafruit_TMP007::read16(uint8_t a) {
 
   Wire.beginTransmission(_addr); // start transmission to device 
 
-  Wire.write(a)
+  Wire.write(a);
 
-  /*Wire.endTransmission(); // end transmission
+  Wire.endTransmission(); // end transmission
   
   Wire.beginTransmission(_addr); // start transmission to device 
   Wire.requestFrom(_addr, (uint8_t)2);// send data n-bytes read
@@ -131,7 +131,7 @@ uint16_t Adafruit_TMP007::read16(uint8_t a) {
   ret <<= 8;
   ret |= Wire.read(); // receive DATA
 
-  Wire.endTransmission(); // end transmission*/
+  Wire.endTransmission(); // end transmission
 
   return ret;
 }
