@@ -15,7 +15,6 @@
  ****************************************************/
 //#ifdef SPARK
   #include "Particle.h"
-  #include "application.h"
   
   #include "debug.h"
   #include "math.h"
