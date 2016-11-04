@@ -15,8 +15,6 @@
  ****************************************************/
 
 #include "Adafruit_TMP007_Library.h"
-#include "spark_wiring.h"
-#include "spark_wiring_i2c.h"
   
 //#include <util/delay.h>
 
