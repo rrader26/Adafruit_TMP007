@@ -21,7 +21,7 @@
 //#define TESTDIE 0x0C78
 //#define TESTVOLT 0xFEED
 
-#define NAN 999999
+//#define NAN 999999
   
 Adafruit_TMP007::Adafruit_TMP007(uint8_t i2caddr) {
   _addr = i2caddr;
