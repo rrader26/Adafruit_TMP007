@@ -25,7 +25,7 @@
 //  #include "application.h"
 
 
-//#include "Wire.h"
+#include "Wire.h"
 
 // uncomment for debugging!
 //#define TMP007_DEBUG 1
