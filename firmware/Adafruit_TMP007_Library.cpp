@@ -29,7 +29,7 @@ Adafruit_TMP007::Adafruit_TMP007(uint8_t i2caddr) {
 
 
 boolean Adafruit_TMP007::begin(uint8_t samplerate) {
-  TwoWire.begin();
+  Wire.begin();
 
   write16(TMP007_CONFIG, TMP007_CFG_MODEON | TMP007_CFG_ALERTEN | 
 	  TMP007_CFG_TRANSC | samplerate);
@@ -118,31 +118,31 @@ int16_t Adafruit_TMP007::readRawVoltage(void) {
 uint16_t Adafruit_TMP007::read16(uint8_t a) {
   uint16_t ret;
 
-  TwoWire.beginTransmission(_addr); // start transmission to device 
+  Wire.beginTransmission(_addr); // start transmission to device 
 
-  TwoWire.write(a)
+  Wire.write(a)
 
-  TwoWire.endTransmission(); // end transmission
+  Wire.endTransmission(); // end transmission
   
-  TwoWire.beginTransmission(_addr); // start transmission to device 
-  TwoWire.requestFrom(_addr, (uint8_t)2);// send data n-bytes read
+  Wire.beginTransmission(_addr); // start transmission to device 
+  Wire.requestFrom(_addr, (uint8_t)2);// send data n-bytes read
 
   ret = Wire.read(); // receive DATA
   ret <<= 8;
-  ret |= TwoWire.read(); // receive DATA
+  ret |= Wire.read(); // receive DATA
 
-  TwoWire.endTransmission(); // end transmission
+  Wire.endTransmission(); // end transmission
 
   return ret;
 }
 
 void Adafruit_TMP007::write16(uint8_t a, uint16_t d) {
-  TwoWire.beginTransmission(_addr); // start transmission to device 
+  Wire.beginTransmission(_addr); // start transmission to device 
 
-  TwoWire.write(a); // sends register address to read from
-  TwoWire.write(d>>8);  // write data
-  TwoWire.write(d);  // write data
+  Wire.write(a); // sends register address to read from
+  Wire.write(d>>8);  // write data
+  Wire.write(d);  // write data
 
-  TwoWire.endTransmission(); // end transmission
+  Wire.endTransmission(); // end transmission
 }
 
