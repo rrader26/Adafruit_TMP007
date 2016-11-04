@@ -16,13 +16,13 @@
 //#ifdef SPARK
   #include "Particle.h"
   
-  /*#include "debug.h"
-  #include "math.h"*/
-  #include "limits.h"
-  #include "stdint.h"
+  /*#include "debug.h"*/
+  //#include "math.h"
+  //#include "limits.h"
+  //#include "stdint.h"
 //#include "spark_utilities.h"
 
-  #include <sys/types.h>
+  //#include <sys/types.h>
 //#elif (ARDUINO >= 100)
 //  #include "Arduino.h"
 //#else
