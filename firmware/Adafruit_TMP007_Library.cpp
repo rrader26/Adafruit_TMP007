@@ -118,9 +118,9 @@ int16_t Adafruit_TMP007::readRawVoltage(void) {
 uint16_t Adafruit_TMP007::read16(uint8_t a) {
   uint16_t ret;
 
-  /*Wire.beginTransmission(_addr); // start transmission to device 
+  Wire.beginTransmission(_addr); // start transmission to device 
 
-  Wire.write(a)
+  /*Wire.write(a)
 
   Wire.endTransmission(); // end transmission
   
