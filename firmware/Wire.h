@@ -10,7 +10,7 @@
 #include "math.h"
 #include "limits.h"
 #include "stdint.h"
-#include "spark_utilities.h"
+//#include "spark_utilities.h"
 extern "C" {
 #include "usb_conf.h"
 #include "usb_lib.h"
