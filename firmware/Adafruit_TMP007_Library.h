@@ -14,7 +14,8 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 //#ifdef SPARK
-  //#include "Particle.h"
+  #include "Particle.h"
+  #include "application.h"
   
   #include "debug.h"
   #include "math.h"
