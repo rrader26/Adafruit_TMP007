@@ -15,7 +15,7 @@
  ****************************************************/
 
 #include "Adafruit_TMP007_Library.h"
-#include <util/delay.h>
+//#include <util/delay.h>
 
 //#define TESTDIE 0x0C78
 //#define TESTVOLT 0xFEED
