@@ -14,7 +14,7 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
-#include "Adafruit_TMP007.h"
+#include "Adafruit_TMP007_Library.h"
 #include <util/delay.h>
 
 //#define TESTDIE 0x0C78
