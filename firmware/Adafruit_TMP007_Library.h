@@ -15,6 +15,8 @@
  ****************************************************/
 //#ifdef SPARK
   #include "Particle.h"
+  #include "application.h"
+  
 //#elif (ARDUINO >= 100)
 //  #include "Arduino.h"
 //#else
