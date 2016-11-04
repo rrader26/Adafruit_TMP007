@@ -13,13 +13,15 @@
   Written by Limor Fried/Ladyada for Adafruit Industries.  
   BSD license, all text above must be included in any redistribution
  ****************************************************/
-
-#if (ARDUINO >= 100)
- #include "Arduino.h"
+#ifdef SPARK
+  #include "Particle.h"
 #else
- #include "WProgram.h"
+#if (ARDUINO >= 100)
+  #include "Arduino.h"
+#else
+  #include "WProgram.h"
 #endif
-#include "Wire.h"
+//#include "Wire.h"
 
 // uncomment for debugging!
 //#define TMP007_DEBUG 1

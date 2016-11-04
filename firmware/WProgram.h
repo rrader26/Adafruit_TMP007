@@ -5,7 +5,7 @@
 #include <string.h>
 #include <math.h>
 
-#include <Adafruit_TMP007_Library/avr/interrupt.h>
+#include <avr/interrupt.h>
 
 #include "wiring.h"
 
